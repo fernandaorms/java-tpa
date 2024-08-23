@@ -5,4 +5,5 @@
  * 
  */
 module javaproject {
+	requires lombok;
 }

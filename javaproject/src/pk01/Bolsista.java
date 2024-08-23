@@ -5,8 +5,8 @@ import java.util.Date;
 public class Bolsista extends Aluno {
 	private String fone;
 	
-	public Bolsista(String nome, Date nascimento, String cpf, String fone) {
-		super(nome, nascimento, cpf);
+	public Bolsista(String nome, Date nascimento, String cpf, String matricula, String fone) {
+		super(nome, nascimento, cpf, matricula);
 		
 		this.fone = fone;
 	}
