@@ -2,7 +2,10 @@ package pk01;
 
 import java.util.Date;
 
-public class Bolsista extends Aluno {
+import lombok.Data;
+
+@Data
+public class Bolsista extends Aluno implements Logavel {
 	private String fone;
 	
 	public Bolsista(String nome, Date nascimento, String cpf, String matricula, String fone) {
@@ -11,6 +14,7 @@ public class Bolsista extends Aluno {
 		this.fone = fone;
 	}
 
+	/*
 	public String getFone() {
 		return fone;
 	}
@@ -18,6 +22,7 @@ public class Bolsista extends Aluno {
 	public void setFone(String fone) {
 		this.fone = fone;
 	}
+	*/
 	
 	@Override
 	public void FazerMatricula() {
@@ -25,5 +30,9 @@ public class Bolsista extends Aluno {
 				+ "\nNascimento: " + this.getNascimento()
 				+ "\nTelefone: " + this.getFone());
 	}
-	 
+	
+	@Override
+	public boolean logar(String senha) {
+		return (senha == "abc");
+	}
 }

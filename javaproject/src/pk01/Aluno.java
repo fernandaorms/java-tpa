@@ -2,8 +2,10 @@ package pk01;
 
 import java.util.Date;
 
+import lombok.Data;
 
-public class Aluno extends Pessoa {
+@Data
+public class Aluno extends Pessoa implements Logavel {
 	public String matricula;
 	
 	
@@ -17,6 +19,11 @@ public class Aluno extends Pessoa {
 	public void FazerMatricula() {
 		System.out.println("Matricula realizada para o aluno: " + this.getNome()
 				+ "\nNascimento: " + super.getNascimento());
+	}
+	
+	@Override
+	public boolean logar(String senha) {
+		return (senha == "123");
 	}
 	
 }

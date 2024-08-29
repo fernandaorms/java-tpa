@@ -12,6 +12,14 @@ public class Pessoa {
 	private Date nascimento;
 	private String cpf;
 	
+	public boolean logar(String senha) {
+		return false;
+	}
+	
+	public boolean logar() {
+		return false;
+	}
+	
 	/*
 	public Pessoa(String nome, Date nascimento, String cpf) {
 		this.nome = nome;
@@ -20,6 +28,7 @@ public class Pessoa {
 	}
 	*/
 	
+	/*
 	public String getNome() {
 		return nome;
 	}
@@ -43,4 +52,5 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+	*/
 }
