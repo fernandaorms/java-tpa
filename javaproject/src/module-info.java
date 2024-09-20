@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module javaproject {
-	requires lombok;
-}
